@@ -3,7 +3,7 @@
 === encuentro ===
 #sound: play demiran1 >> loop
 
-<- ChangeBG("download")
+<- ChangeBG("rain")
 
 Llovía torrencialmente en Cali.
 
@@ -30,13 +30,40 @@ José Miguel: "Ya habrá tiempo para eso. Por ahora vamos a tu casa a resguardar
 Ya en casa, Yolainer y José Miguel tomaban chocolate con pan.
 
 + [Preguntarle a José Miguel sobre su viaje]
-    José Miguel sonrió. "Fue una aventura increíble."
-    -> END
+    #sound: play drum
+
+    José Miguel sonrió.
+    "Fue una aventura increíble."
+
+    "Vi montañas flotantes."
+    "Dormí con ballenas."
+
+    Yolainer escuchó fascinado.
+
+    -> reunion
+
 
 + [Irse a dormir]
-    Yolainer bostezó y decidió descansar.
-    -> END
+    #sound: play gong
 
+    Yolainer bostezó.
+
+    Se acomodó bajo las cobijas.
+
+    Afuera seguía lloviendo.
+
+    Poco a poco se quedó dormido.
+
+    -> reunion
+
+
+=== reunion ===
+La noche avanzó.
+
+Sin importar la decisión,
+ambos terminaron escuchando la lluvia.
+
+-> END
 
 === ChangeBG(bgName) ===
 { bgName:
@@ -44,6 +71,8 @@ Ya en casa, Yolainer y José Miguel tomaban chocolate con pan.
         #image: remove add download >> target: bgContainer
     - "Kim":
         #image: remove add Kim >> target: bgContainer
+    - "rain":
+        #video: play rain >> target: bgContainer, loop
 }
 -> DONE
 

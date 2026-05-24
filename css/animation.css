@@ -1,0 +1,12 @@
+.fadein {
+	animation: var(--animLength, 0ms) linear fade forwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

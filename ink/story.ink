@@ -20,6 +20,7 @@ En una bajada empinada, perdió todo el control y cayó derrapando sobre el pavi
 <- ChangePortraitRight("perro")
 
 José Miguel, el perro criollo, regresaba de su viaje por el mundo en globo aerostático.
+<- ChangePortraitLeft("nino")
 
 Al ver a su amigo en peligro, logró agarrarlo con un gancho y salvarlo.
 

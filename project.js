@@ -15,7 +15,7 @@ const processorPaths = [
 	"./js/processors/audioTags.js",
 	"./js/processors/continueMarker.js",
 	"./js/processors/textAnimation.js",
-	// "./js/processors/videoTags.js",
+	"./js/processors/videoTags.js",
 	// "./js/processors/spanner.js",
 	// "./js/processors/inkVariableToCss.js",
 ];
@@ -24,7 +24,8 @@ const processorPaths = [
 // put the file paths to them in double quotes inside the square brackets separated by commas
 // e.g. ["./images/file1.png","./images/files2.png"]
 // if you're adding images, video, or sound through their tags, they'll be preloaded automatically
-const externalFiles = [];
+const externalFiles = [
+];
 
 // you won't need to change these unless you want some extra debug messages.
 // if you want debug messages, uncomment the debug line

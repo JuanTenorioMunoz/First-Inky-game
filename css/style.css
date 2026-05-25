@@ -67,6 +67,12 @@ body {
     object-fit: cover;
 }
 
+#bgContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 [data-ir-role="choice"] {
     display: block;
     padding: 1rem 1.25rem;

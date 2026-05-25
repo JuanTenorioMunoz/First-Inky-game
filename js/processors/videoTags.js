@@ -28,7 +28,7 @@ const codecs = {
 	mp4: {
 		name: "AV1",
 		extension: ".mp4",
-		codecstring: 'video/mp4; codecs="av01.0.13M.08',
+		codecstring: 'video/mp4; codecs="av01.0.13M.08"',
 		priority: 1,
 	},
 	webm: {

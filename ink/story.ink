@@ -72,6 +72,8 @@ ambos terminaron escuchando la lluvia.
     - "Kim":
         #image: remove add Kim >> target: bgContainer
     - "rain":
+        #image: remove >> target: bgContainer
+        #video: stop
         #video: play rain >> target: bgContainer, loop
 }
 -> DONE
@@ -80,5 +82,7 @@ ambos terminaron escuchando la lluvia.
 === Preload ===
 #image: add download
 #image: add Kim
+#video: rain
 #sound: play demiran1
+
 -> DONE

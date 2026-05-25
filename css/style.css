@@ -25,11 +25,14 @@ body {
 	position: relative;
 	height: 100%;
 	width: 75ch;
-	padding: 1rem;
+    padding-bottom: 200px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 	max-width: 700px;
-    padding: 3rem;
+
     transform: translateX(-20vw);
 	
     background: rgba(0, 0, 0, 0.45);
@@ -108,4 +111,31 @@ body {
     text-shadow:
         0 0 8px rgba(255,255,255,0.25),
         0 0 20px rgba(255,255,255,0.1);
+}
+
+#portraitLeft {
+  position: fixed;
+  left: 0vw;
+  bottom: 0;
+  width: 25vw;
+  height: 0vh;
+  pointer-events: none;
+}
+
+#portraitRight {
+  position: fixed;
+  right: 2vw;
+  width: 25vw;
+  height: 0vh;
+  pointer-events: none;
+}
+
+#centerItem {
+  position: fixed;
+  left: 50%;
+  bottom: 10vh;
+  transform: translateX(-50%);
+  width: 40vw;
+  height: 70vh;
+  pointer-events: none;
 }

@@ -1,33 +1,42 @@
+VAR y = 2
+VAR j = 1
+
 -> encuentro
 
 === encuentro ===
-#sound: play demiran1 >> loop
+#sound: play rainsound >> loop
 
 <- ChangeBG("rain")
 
-Llovía torrencialmente en Cali.
+La lluvía no dejaba ver mucho más allá del manubrio de la bicicleta. Juan,  de nueve años, la montaba con dificultad.
 
-El pobre niño Yolainer, de tan solo 9 años, montaba su bicicleta con dificultad intentando llegar a su casa.
+En una bajada empinada, perdió todo el control y cayó derrapando sobre el pavimento. 
 
-De repente pierde el control en una bajada y casi cae a un canal.
 
 ...cuando un viejo amigo vuelve para ayudarlo.
+
+#sound: play demiran1 >> loop
+
+<- ChangePortraitRight("perro")
 
 José Miguel, el perro criollo, regresaba de su viaje por el mundo en globo aerostático.
 
 Al ver a su amigo en peligro, logró agarrarlo con un gancho y salvarlo.
 
-<- ChangeBG("Kim")
+"¡José Miguel! Ya te extrañaba. Quiero que me cuentes todo lo que viviste."
 
-Yolainer: "¡José Miguel! Ya te extrañaba. Quiero que me cuentes todo lo que viviste."
+<- ChangePortraitRight("noteReal")
 
 José Miguel: "Ya habrá tiempo para eso. Por ahora vamos a tu casa a resguardarnos de la lluvia."
+
+<- ChangePortraitRight("perro")
 
 -> merienda
 
 
 === merienda ===
 Ya en casa, Yolainer y José Miguel tomaban chocolate con pan.
+
 
 + [Preguntarle a José Miguel sobre su viaje]
     #sound: play drum
@@ -68,8 +77,10 @@ ambos terminaron escuchando la lluvia.
 === ChangeBG(bgName) ===
 { bgName:
     - "download":
+        #video: remove 
         #image: remove add download >> target: bgContainer
     - "Kim":
+        #video: remove 
         #image: remove add Kim >> target: bgContainer
     - "rain":
         #image: remove >> target: bgContainer
@@ -78,8 +89,28 @@ ambos terminaron escuchando la lluvia.
 }
 -> DONE
 
+=== ChangePortraitRight(PRName) ===
+{ PRName:
+    - "perro":
+        #image: remove add perro >> target: portraitRight
+    - "noteReal":
+        #image: remove add noteReal >> target: portraitRight
+}
+-> DONE
+
+=== ChangePortraitLeft(PLName) ===
+{ PLName:
+    - "nino":
+        #image: remove add nino >> target: portraitLeft
+}
+-> DONE
+
 
 === Preload ===
+
+#image: add perro
+#image: add noteReal
+#image: add nino
 #image: add download
 #image: add Kim
 #video: rain

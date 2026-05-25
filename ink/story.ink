@@ -32,6 +32,10 @@ José Miguel: "Ya habrá tiempo para eso. Por ahora vamos a tu casa a resguardar
 
 <- ChangePortraitRight("perro")
 
+<- ChangePortraitLeft("ninoPreocupado")
+
+...
+
 -> merienda
 
 
@@ -98,7 +102,7 @@ ACT2
 #sound: play ambience >> loop
 <- ChangeBG("rain")
 
-<- ChangePortraitLeft("nino")
+<- ChangePortraitLeft("ninoPreocupado")
 <- ChangePortraitRight("perro")
 
 Julián: (acariciando a Croqueta)
@@ -396,12 +400,18 @@ El Contador nunca supo que esa mochila vacía pesaba más que todas las tonelada
 { PLName:
     - "nino":
         #image: remove add nino >> target: portraitLeft
+    - "ninoPreocupado":
+        #image: remove add ninoPreocupado >> target: portraitLeft
+    - "ninoTriste":
+        #image: remove add ninoPreocupado >> target: portraitLeft
 }
 -> DONE
 
 
 === Preload ===
 
+#image: add ninoPreocupado
+#image: add ninoTriste
 #image: add perro
 #image: add noteReal
 #image: add nino

@@ -80,7 +80,9 @@ ambos terminaron escuchando la lluvia.
 <-nullify("portraitLeft")
 <-nullify("portraitRight")
 <-nullify("bgContainer")
+<-nullify("sound")
 
+#sound: stop rainsound
 -> ACT2
 
 === ACT2 ===
@@ -366,6 +368,11 @@ El Contador nunca supo que esa mochila vacía pesaba más que todas las tonelada
     - "bgContainer":
         #video: stop >> target: bgContainer
         #image: remove >> target: bgContainer
+    - "bgContainer":
+        #video: stop >> target: bgContainer
+        #image: remove >> target: bgContainer
+    - "sound":
+        #sound: stop all
 }
 -> DONE
 
@@ -378,6 +385,10 @@ El Contador nunca supo que esa mochila vacía pesaba más que todas las tonelada
         #video: remove 
         #image: remove add Kim >> target: bgContainer
     - "rain":
+        #image: remove >> target: bgContainer
+        #video: stop
+        #video: play rain >> target: bgContainer, loop
+    - "nullSoundRain":
         #image: remove >> target: bgContainer
         #video: stop
         #video: play rain >> target: bgContainer, loop

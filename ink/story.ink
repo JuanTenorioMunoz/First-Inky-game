@@ -8,30 +8,32 @@ VAR j = 1
 
 <- ChangeBG("rain")
 
-La lluvía no dejaba ver mucho más allá del manubrio de la bicicleta. Juan,  de nueve años, la montaba con dificultad.
+La lluvía no dejaba ver mucho más allá del manubrio de la bicicleta. Julian, de nueve años, la montaba con dificultad.
 
 En una bajada empinada, perdió el control y cayó derrapando sobre el pavimento. 
 
-Sollozó levemente mientras sus lagrimas eran lavadas por la lluvia.
+Sollozó levemente mientras sus lagrimas eran lavadas por la lluvia. Su mayor preocupación era la bicicleta, que debido a algún tipo de intervención divina, no sufrió ningun rasguño.
 
-Julian: Afortundamente 
-
-...cuando un viejo amigo vuelve para ayudarlo.
+Mientras se paraba y movía la bicicleta, vió en una esquina una silueta familiar
 
 #sound: play demiran1 >> loop
 
 <- ChangePortraitRight("perro")
 
-José Miguel, el perro criollo, regresaba de su viaje por el mundo en globo aerostático.
+Croqueta, el perro criollo.
 <- ChangePortraitLeft("nino")
 
-Al ver a su amigo en peligro, logró agarrarlo con un gancho y salvarlo.
+Julian: ¿Dónde te habías metido? Mamá te buscó por todos lados
 
-"¡José Miguel! Ya te extrañaba. Quiero que me cuentes todo lo que viviste."
+Croqueta: ...
+
+Croqueta: ... 
+
+Julian abraza a Croqueta fuertemente.
 
 <- ChangePortraitRight("noteReal")
 
-José Miguel: "Ya habrá tiempo para eso. Por ahora vamos a tu casa a resguardarnos de la lluvia."
+Croqueta: Porque este mi hijo muerto era, y ha revivido; se había perdido, y es hallado
 
 <- ChangePortraitRight("perro")
 
@@ -414,9 +416,9 @@ Julián llora en silencio.
 
 Croqueta apoya su hocico en su rodilla.
 
-Croqueta 
-El hambre verdadera no es del estómago… es de no poder explicar por qué hiciste lo correcto y aun así perdiste. (anónimo)
+Croqueta : El hambre verdadera no es del estómago… es de no poder explicar por qué hiciste lo correcto y aun así perdiste. (anónimo)
 
+-> final_act3
 
 === final_act3 ===
 
